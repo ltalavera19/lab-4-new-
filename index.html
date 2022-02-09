@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Volunteer Form for ITMD-361</title>
+  </head>
+  <body>
+    <form method="POST" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
+      <h1>Volunteer Form</h1>
+      <fieldset>
+        <legend>My Info</legend>
+        <div>
+          <label for="firstname">First Name:</label>
+          <input id="firstname" type="text" name="first_name_field" placeholder="First Name">
+        </div>
+        <div>
+          <label for="lastname">Last Name:</label>
+          <input type="text" id="lastname" name="last_name_field" placeholder="Last Name">
+        </div>
+        <div>
+          <label for="phonenumber">Phone Number:</label>
+          <input type="tel" name="phone_field" id="phonenumber" placeholder="Phone Number">
+        </div>
+        <div>
+          <label for="emailaddress">Email Address</label>
+          <input type="email" name="email_field" id="emailaddress" placeholder="Email Adress">
+        </div>
+        <div>
+          <label>Gender:</label>
+          <label for="Male">Male</label>
+          <input type="radio" name="gender_field"  id="Male" value="Male">
+          <label for="Female">Female</label>
+          <input type="radio" name="gender_field" id="Female" value="Female">
+        </div>
+        <div>
+        <label>Age;</label>
+        <select id="Age" name="age_field">
+          <option value="Under 18">Under 18</option>
+          <option value="18-24">18-24</option>
+          <option value="25-34">25-34</option>
+          <option value="35-44">35-44</option>
+          <option value="45-54">45-54</option>
+          <option value="55-64">55-64</option>
+          <option value="65 and over">65 and over</option>
+        </select>
+        </div>
+      </fieldset>
+      <fieldset>
+      <legend>My Availability:</legend>
+      <div>
+      <label>Days Available:</label>
+      </div>
+      <div>
+        <input type="checkbox" name="available_field[]" value="Sunday"><label>Sunday</label><br>
+        <input type="checkbox" name="available_field[]" value="Monday"><label>Monday</label><br>
+        <input type="checkbox" name="available_field[]" value="Tuesday"><label>Tuesday</label><br>
+        <input type="checkbox" name="available_field[]" value="Wednesday"><label>Wednesday</label><br>
+        <input type="checkbox" name="available_field[]" value="Thursday"><label>Thursday</label><br>
+        <input type="checkbox" name="available_field[]" value="Friday"><label>Friday</label><br>
+        <input type="checkbox" name="available_field[]" value="Saturday"><label>Saturday</label><br>
+    </div>
+      <label for="comments"></label>
+      <textarea id="comments" name="comments_field" placeholder="Leave any comments here" rows="15" cols="30"></textarea>
+      </fieldset>
+  <button type="submit" name="button">Send Me</button>
+  <input type="hidden" name="hidden_field" value="ahernandez16@hawk.iit.edu">
+    </form>
+  </body>
+</html>
